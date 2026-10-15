@@ -4,7 +4,10 @@
           <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     </head>
     <body>
-          Aqui fica a lista de tarefas
+
+      <div class="cartão">
+
+          <h1> Aqui fica a lista de tarefas:</h1>
 
          {% if lista %}
             <ol>
@@ -22,6 +25,7 @@
             <input type="text" name="nova">
             <button type="submit">adicionar</button>
          </form>
+       </div>
     </body>
 
 </html>
